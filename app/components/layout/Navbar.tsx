@@ -1,0 +1,32 @@
+import Link from "next/link";
+import Logo from "../branding/Logo";
+
+const navLinks = [
+  { name: "Meet Mia's", href: "/meet-mias" },
+  { name: "Snacks", href: "/snacks" },
+  { name: "Coffee Moments", href: "/coffee-moments" },
+  { name: "Wo sind wir?", href: "/wo-sind-wir" },
+  { name: "Kontakt", href: "/kontakt" },
+];
+
+export default function Navbar() {
+  return (
+    <header className="my-8 text-brown-dark">
+      <nav className="sticky flex justify-between">
+        <Link href={"/"} className="flex items-center gap-3">
+          <Logo className="size-16" />
+          <span className="font-grifa text-2xl">
+            <span className="font-bold">Mia&apos;s</span>&nbsp;Coffee&nbsp;Break
+          </span>
+        </Link>
+        <ul className="flex items-center gap-6 text-lg font-nunito font-bold">
+          {navLinks.map((navLink) => (
+            <li key={navLink.href}>
+              <Link href={navLink.href}>{navLink.name}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
+  );
+}
