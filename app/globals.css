@@ -6,8 +6,9 @@
   --color-brown-dark: #5c4433;
   --color-orange: #dc9f5e;
 
+  --font-nunito: var(--font-nunito);
+  --font-modak: var(--font-modak);
   --font-grifa: var(--font-grifa);
   --font-knicknack: var(--font-knicknack);
-  --font-nunito: var(--font-nunito);
   --font-sundayNotes: var(--font-sundayNotes);
 }

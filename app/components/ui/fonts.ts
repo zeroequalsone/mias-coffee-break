@@ -1,4 +1,4 @@
-import { Nunito, Poppins } from "next/font/google";
+import { Nunito, Poppins, Modak } from "next/font/google";
 import localFont from "next/font/local";
 
 export const poppins = Poppins({
@@ -6,6 +6,11 @@ export const poppins = Poppins({
   weight: ["400"],
 });
 export const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" });
+export const modak = Modak({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-modak",
+});
 export const grifa = localFont({
   src: [
     {
