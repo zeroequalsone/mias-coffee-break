@@ -7,6 +7,7 @@ import {
   knicknack,
   sundayNotes,
   modak,
+  pacifico,
 } from "./components/ui/fonts";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
@@ -27,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="de"
-      className={`h-full antialiased ${poppins.className} ${nunito.variable} ${modak.variable} ${grifa.variable} ${knicknack.variable} ${sundayNotes.variable}`}
+      className={`h-full antialiased ${poppins.className} ${nunito.variable} ${modak.variable} ${pacifico.variable} ${grifa.variable} ${knicknack.variable} ${sundayNotes.variable}`}
     >
       <body className="min-h-full bg-cream">
         <div className="max-w-[1600px] w-full mx-auto px-24 flex flex-col">
