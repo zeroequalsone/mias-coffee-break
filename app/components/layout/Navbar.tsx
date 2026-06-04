@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Logo from "../branding/Logo";
-import HamburgerMenu from "@/public/Hamburger_Menu.svg";
+import { useState } from "react";
+import { ListIcon, XIcon } from "@phosphor-icons/react";
 
 const navLinks = [
   { name: "Meet Mia's", href: "/meet-mias" },
@@ -11,15 +14,25 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
-    <header className="sticky top-4 lg:top-8 p-4 text-brown-dark bg-cream/30 backdrop-blur-3xl">
-      <nav className="flex justify-between">
-        <Link href={"/"} className="flex items-center gap-4">
+    <header
+      className={`sticky top-4 lg:top-8 p-4 text-brown-dark bg-cream/85 ${mobileMenuOpen ? "rounded-t-2xl" : "rounded-2xl"}`}
+    >
+      <nav className="flex justify-between items-center">
+        <Link
+          href={"/"}
+          className="flex items-center gap-4"
+          onClick={() => setMobileMenuOpen(false)}
+        >
           <Logo className="size-12 lg:size-16" />
           <span className="font-grifa text-lg lg:text-2xl">
             <span className="font-bold">Mia&apos;s</span>&nbsp;Coffee&nbsp;Break
           </span>
         </Link>
+
+        {/* Desktop Navigation */}
         <ul className="hidden lg:flex items-center gap-6 text-lg font-nunito font-bold">
           {navLinks.map((navLink) => (
             <li key={navLink.href}>
@@ -27,8 +40,37 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <HamburgerMenu className="lg:hidden text-brown-dark" />
+
+        {/* Mobile Menu Button */}
+        <button
+          className="lg:hidden text-brown-dark"
+          onClick={() => setMobileMenuOpen((prev) => !prev)}
+        >
+          {mobileMenuOpen ? (
+            <XIcon className="size-9" weight="bold" />
+          ) : (
+            <ListIcon className="size-9" weight="bold" />
+          )}
+        </button>
       </nav>
+
+      {/* Mobile Navigation */}
+      {mobileMenuOpen && (
+        <ul
+          className={`absolute bg-cream/85 top-full left-0 w-full p-4 items-center flex flex-col gap-6 text-lg font-nunito font-bold ${mobileMenuOpen ? "rounded-b-2xl" : "rounded-2xl"}`}
+        >
+          {navLinks.map((navLink) => (
+            <li key={navLink.href}>
+              <Link
+                href={navLink.href}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {navLink.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
     </header>
   );
 }
