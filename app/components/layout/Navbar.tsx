@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Logo from "../branding/Logo";
 import HamburgerMenu from "@/public/Hamburger_Menu.svg";
-import Image from "next/image";
 
 const navLinks = [
   { name: "Meet Mia's", href: "/meet-mias" },
@@ -13,8 +12,8 @@ const navLinks = [
 
 export default function Navbar() {
   return (
-    <header className="lg:my-8 text-brown-dark">
-      <nav className="sticky flex justify-between">
+    <header className="sticky top-4 lg:top-8 p-4 text-brown-dark bg-cream/30 backdrop-blur-3xl">
+      <nav className="flex justify-between">
         <Link href={"/"} className="flex items-center gap-4">
           <Logo className="size-12 lg:size-16" />
           <span className="font-grifa text-lg lg:text-2xl">
@@ -28,11 +27,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <Image
-          alt="Hamburger Menu"
-          src={HamburgerMenu}
-          className="lg:hidden text-brown-dark"
-        />
+        <HamburgerMenu className="lg:hidden text-brown-dark" />
       </nav>
     </header>
   );
