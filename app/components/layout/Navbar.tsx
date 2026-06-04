@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-4 lg:top-8 p-4 text-brown-dark bg-cream/85 ${mobileMenuOpen ? "rounded-t-2xl" : "rounded-2xl"}`}
+      className={`sticky top-4 lg:top-8 p-4 text-brown-dark bg-cream/85 z-50 ${mobileMenuOpen ? "rounded-t-2xl" : "rounded-2xl"}`}
     >
       <nav className="flex justify-between items-center">
         <Link
