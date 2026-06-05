@@ -7,18 +7,14 @@ export default function Home() {
   return (
     <Fragment>
       {/* Hero Section */}
-      <section className="flex flex-col items-center gap-8 my-24">
-        <div>
-          <h1 className="font-modak text-brown-light text-9xl">
-            TAKE A BREAK —
-          </h1>
-          <h2 className="font-modak text-brown-light text-8xl">
-            AND DRINK A COFFEE.
-          </h2>
+      <section className="flex flex-col items-center gap-8 my-12 lg:my-24">
+        <div className="text-center font-modak text-brown-light text-4xl lg:text-9xl">
+          <h1>TAKE A BREAK —</h1>
+          <h2 className="text-3xl lg:text-8xl">AND DRINK A COFFEE.</h2>
         </div>
         <Link
           href={"/drinks-snacks"}
-          className="bg-orange text-brown-light font-grifa font-bold p-4 rounded-2xl"
+          className="bg-orange text-brown-light font-grifa lg:text-xl text-sm font-bold p-4 lg:p-6 rounded-2xl"
         >
           Entdecke unsere Spezialitäten
         </Link>
