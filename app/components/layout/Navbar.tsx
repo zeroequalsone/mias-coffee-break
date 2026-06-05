@@ -50,7 +50,7 @@ export default function Navbar() {
           {mobileMenuOpen ? (
             <XIcon className="size-9" weight="bold" />
           ) : (
-            <HamburgerMenuOpen className="size-9" weight="bold" />
+            <HamburgerMenuOpen className="size-9" />
           )}
         </button>
       </nav>
