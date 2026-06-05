@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Fragment>
       {/* Hero Section */}
-      <section className="flex flex-col items-center gap-8 my-12 lg:my-24">
+      <section className="flex flex-col items-center gap-8 mt-12 lg:mt-24">
         <div className="text-center font-modak text-brown-light text-4xl lg:text-9xl">
           <h1>TAKE A BREAK —</h1>
           <h2 className="text-3xl lg:text-8xl">AND DRINK A COFFEE.</h2>
@@ -21,7 +21,7 @@ export default function Home() {
       </section>
 
       {/* Coffee Section */}
-      <section className="flex items-center justify-between gap-8 mt-24 p-16 bg-brown-dark">
+      <section className="flex items-center justify-between gap-8 p-16 bg-brown-dark">
         <div className="flex flex-col gap-6 text-orange">
           <p className="font-knicknack text-7xl">
             <span className="block">Good Coffee.</span>
