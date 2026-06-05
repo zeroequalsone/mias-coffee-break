@@ -3,7 +3,8 @@
 import Link from "next/link";
 import Logo from "../branding/Logo";
 import { useState } from "react";
-import { ListIcon, XIcon } from "@phosphor-icons/react";
+import { XIcon } from "@phosphor-icons/react";
+import HamburgerMenuOpen from "@/public/HamburgerMenuOpen.svg";
 
 const navLinks = [
   { name: "Meet Mia's", href: "/meet-mias" },
@@ -49,7 +50,7 @@ export default function Navbar() {
           {mobileMenuOpen ? (
             <XIcon className="size-9" weight="bold" />
           ) : (
-            <ListIcon className="size-9" weight="bold" />
+            <HamburgerMenuOpen className="size-9" weight="bold" />
           )}
         </button>
       </nav>
