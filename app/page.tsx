@@ -52,7 +52,8 @@ export default function Home() {
             <Image
               src={slider.url}
               alt={slider.url}
-              className="w-full h-full object-cover"
+              className="object-cover"
+              sizes="(min-width: 1024px) 33vw, 100vw"
               loading="eager"
               fill
             />
