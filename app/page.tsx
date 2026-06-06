@@ -3,6 +3,12 @@ import Link from "next/link";
 import { Fragment } from "react";
 import CoffeeCup from "@/public/Coffee_Cup.png";
 
+const sliders = [
+  { text: "Wärmend.", url: "/Slider1.webp" },
+  { text: "Herzhaft.", url: "/Slider2.webp" },
+  { text: "Frisch.", url: "/Slider3.webp" },
+];
+
 export default function Home() {
   return (
     <Fragment>
@@ -37,6 +43,26 @@ export default function Home() {
         <p className="font-pacifico italic text-xl lg:text-3xl text-orange">
           Schmeckt wie in Italien
         </p>
+      </section>
+
+      {/* Slider Section */}
+      <section className="flex flex-col lg:flex-row">
+        {sliders.map((slider) => (
+          <div key={slider.url} className="relative h-48 lg:h-96 lg:flex-1">
+            <Image
+              src={slider.url}
+              alt={slider.url}
+              className="w-full h-full object-cover"
+              loading="eager"
+              fill
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <p className="w-full text-center bg-black/30 text-white text-2xl font-bold">
+                {slider.text}
+              </p>
+            </div>
+          </div>
+        ))}
       </section>
     </Fragment>
   );
