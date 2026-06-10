@@ -67,19 +67,30 @@ export default function Home() {
       </section>
 
       {/* Coffee Banner */}
-      <section>
-        <div className="relative h-48 lg:h-96 overflow-hidden">
-          <Image
-            src={"/CoffeeBeansBanner.webp"}
-            alt="Kaffeebohnen Banner"
-            className="object-cover scale-150 lg:scale-none"
-            loading="eager"
-            fill
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <p className="w-48 lg:w-96 text-center font-sundayNotes text-lg lg:text-4xl text-brown-dark">
-              Auch Kaffeebohnen brauchen einen Break. Nimm dir deinen.
+      <section className="relative h-48 lg:h-96 overflow-hidden">
+        <Image
+          src={"/CoffeeBeansBanner.webp"}
+          alt="Kaffeebohnen Banner"
+          className="object-cover scale-150 lg:scale-none"
+          loading="eager"
+          fill
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <p className="w-48 lg:w-96 text-center font-sundayNotes text-lg lg:text-4xl text-brown-dark">
+            Auch Kaffeebohnen brauchen einen Break. Nimm dir deinen.
+          </p>
+        </div>
+      </section>
+
+      {/* Ende Section */}
+      <section className="h-48 lg:h-96 my-16">
+        <div className="flex flex-col items-center justify-center h-full text-orange text-xl lg:text-3xl font-knicknack">
+          <div className="flex flex-col items-center justify-center w-96 lg:w-3xl text-center gap-8">
+            <p className="text-3xl lg:text-6xl">
+              Du hast es bis zum Ende der Seite geschafft!
             </p>
+            <p>Jetzt fehlt nur noch dein perfekter Kaffee.</p>
+            <p>See you at the coffee break? 👀</p>
           </div>
         </div>
       </section>
