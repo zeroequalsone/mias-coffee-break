@@ -31,7 +31,7 @@ export default function RootLayout({
       className={`antialiased ${poppins.className} ${nunito.variable} ${modak.variable} ${pacifico.variable} ${grifa.variable} ${knicknack.variable} ${sundayNotes.variable}`}
     >
       <body className="bg-cream">
-        <div className="flex flex-col max-w-[1600px] w-full mx-auto mt-4 lg:mt-8 px-4 lg:px-24">
+        <div className="flex flex-col max-w-[1600px] w-full mx-auto mt-4 lg:mt-8 px-4 lg:px-24 select-none">
           <Navbar />
           <main>{children}</main>
           <Footer />

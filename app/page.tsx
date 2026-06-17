@@ -20,7 +20,7 @@ export default function Home() {
         </div>
         <Link
           href={"/drinks-snacks"}
-          className="bg-orange text-brown-light font-grifa lg:text-xl text-sm font-bold p-4 lg:p-6 rounded-2xl"
+          className="bg-orange-dark hover:bg-orange-light text-brown-light font-grifa lg:text-xl text-sm font-bold p-4 lg:p-6 rounded-2xl"
         >
           Entdecke unsere Spezialitäten
         </Link>
@@ -28,7 +28,7 @@ export default function Home() {
 
       {/* Coffee Section */}
       <section className="flex flex-col lg:flex-row items-center justify-between gap-8 mt-12 lg:mt-24 py-8 lg:px-16 lg:p-16 bg-brown-dark">
-        <div className="flex flex-col gap-4 lg:gap-6 text-orange">
+        <div className="flex flex-col gap-4 lg:gap-6 text-orange-dark">
           <p className="font-knicknack text-4xl lg:text-7xl text-center lg:text-left">
             <span className="block">Good Coffee.</span>
             <span className="block">Good Vibes.</span>
@@ -40,7 +40,7 @@ export default function Home() {
           className="w-48 lg:w-96 -rotate-10"
           loading="eager"
         />
-        <p className="font-pacifico italic text-xl lg:text-3xl text-orange">
+        <p className="font-pacifico italic text-xl lg:text-3xl text-orange-dark">
           Schmeckt wie in Italien
         </p>
       </section>
@@ -84,7 +84,7 @@ export default function Home() {
 
       {/* Ende Section */}
       <section className="h-48 lg:h-96 my-16">
-        <div className="flex flex-col items-center justify-center h-full text-orange text-xl lg:text-3xl font-knicknack">
+        <div className="flex flex-col items-center justify-center h-full text-orange-dark text-xl lg:text-3xl font-knicknack">
           <div className="flex flex-col items-center justify-center w-96 lg:w-3xl text-center gap-8">
             <p className="text-3xl lg:text-6xl">
               Du hast es bis zum Ende der Seite geschafft!
