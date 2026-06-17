@@ -24,7 +24,7 @@ export default function Navbar() {
       <nav className="flex justify-between items-center">
         <Link
           href={"/"}
-          className="flex items-center gap-4"
+          className="flex items-center gap-4 hover:text-brown-light"
           onClick={() => setMobileMenuOpen(false)}
         >
           <Logo className="size-12 lg:size-16" />
@@ -36,7 +36,7 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <ul className="hidden lg:flex items-center gap-6 text-lg font-nunito font-bold">
           {navLinks.map((navLink) => (
-            <li key={navLink.href}>
+            <li key={navLink.href} className="hover:text-brown-light">
               <Link href={navLink.href}>{navLink.name}</Link>
             </li>
           ))}
