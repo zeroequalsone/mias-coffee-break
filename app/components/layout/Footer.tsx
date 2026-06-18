@@ -1,12 +1,6 @@
+import { FOOTER_LINKS } from "@/constants/footerLinks";
 import Link from "next/link";
 import { Fragment } from "react";
-
-const footerLinks = [
-  { name: "Impressum", href: "/impressum" },
-  { name: "Datenschutz", href: "/datenschutz" },
-  { name: "AGB", href: "/agb" },
-  { name: "Kontakt", href: "/kontakt" },
-];
 
 export default function Footer() {
   return (
@@ -16,12 +10,12 @@ export default function Footer() {
           Mia&apos;s&nbsp;Coffee&nbsp;Break
         </p>
         <ul className="flex flex-col lg:flex-row items-center gap-2 lg:gap-8">
-          {footerLinks.map((footerLink, index) => (
+          {FOOTER_LINKS.map((footerLink, index) => (
             <Fragment key={footerLink.href}>
               <li className="text-lg hover:text-orange-light">
                 <Link href={footerLink.href}>{footerLink.name}</Link>
               </li>
-              {index < footerLinks.length - 1 && (
+              {index < FOOTER_LINKS.length - 1 && (
                 <span className="text-2xl hidden lg:block">•</span>
               )}
             </Fragment>

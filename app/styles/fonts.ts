@@ -19,12 +19,12 @@ export const pacifico = Pacifico({
 export const grifa = localFont({
   src: [
     {
-      path: "../../fonts/grifa-regular.ttf",
+      path: "../fonts/grifa-regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../fonts/grifa-bold.ttf",
+      path: "../fonts/grifa-bold.ttf",
       weight: "700",
       style: "bold",
     },
@@ -34,29 +34,29 @@ export const grifa = localFont({
 export const knicknack = localFont({
   src: [
     {
-      path: "../../fonts/Knicknack Regular.otf",
+      path: "../fonts/Knicknack Regular.otf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../fonts/Knicknack Medium.otf",
+      path: "../fonts/Knicknack Medium.otf",
       weight: "500",
       style: "medium",
     },
-    { path: "../../fonts/Knicknack Bold.otf", weight: "700", style: "bold" },
+    { path: "../fonts/Knicknack Bold.otf", weight: "700", style: "bold" },
     {
-      path: "../../fonts/Knicknack Black.otf",
+      path: "../fonts/Knicknack Black.otf",
       weight: "800",
       style: "extrabold",
     },
-    { path: "../../fonts/Knicknack Heavy.otf", weight: "900", style: "black" },
+    { path: "../fonts/Knicknack Heavy.otf", weight: "900", style: "black" },
   ],
   variable: "--font-knicknack",
 });
 export const sundayNotes = localFont({
   src: [
     {
-      path: "../../fonts/sunday-notes-regular.ttf",
+      path: "../fonts/sunday-notes-regular.ttf",
       weight: "400",
       style: "normal",
     },
