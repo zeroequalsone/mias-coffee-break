@@ -1,4 +1,4 @@
-import { SLIDERS } from "@/constants/sliders";
+import { SLIDERS } from "@/constants/home/sliders";
 import Image from "next/image";
 
 export const ImageSlider = () => {
