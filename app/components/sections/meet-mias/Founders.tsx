@@ -1,7 +1,7 @@
 export const Founders = () => {
   return (
-    <div className="text-brown-light text-center">
-      <div className="flex flex-col lg:flex-row justify-center lg:items-center gap-6 lg:gap-16 mt-8 lg:mt-12 max-w-xs lg:max-w-full mx-auto">
+    <div className="mt-8 lg:mt-12 text-brown-light text-center">
+      <div className="flex flex-col lg:flex-row justify-center lg:items-center gap-6 lg:gap-16 max-w-xs lg:max-w-full mx-auto">
         <div className="flex flex-col gap-6 w-full">
           <p className="font-knicknack text-3xl lg:text-5xl text-brown-dark">
             Die Gründer
