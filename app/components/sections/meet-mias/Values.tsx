@@ -6,7 +6,7 @@ export const Values = () => {
   return (
     <div className="mt-8 lg:mt-12 bg-brown-dark text-orange-dark">
       <div className="flex flex-col gap-8 lg:gap-12 max-w-5xl mx-auto text-center p-8">
-        <p className="font-knicknack text-3xl lg:text-6xl">Unsere Werte</p>
+        <h2 className="font-knicknack text-3xl lg:text-6xl">Unsere Werte</h2>
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           {VALUES.map((value) => {
             const Icon = value.icon;

@@ -2,15 +2,14 @@
 
 import { CONTACT_DETAILS } from "@/constants/meet-mias/contactDetails";
 import { OPENING_TIMES } from "@/constants/meet-mias/openingTimes";
-import { Fragment } from "react/jsx-runtime";
 
 export const Visit = () => {
   return (
     <div className="my-8 text-brown-light font-knicknack">
       <div className="flex flex-col gap-8 max-w-3xl mx-auto text-center lg:p-8 lg:gap-12">
-        <p className="font-knicknack text-3xl text-brown-dark lg:text-6xl">
+        <h2 className="font-knicknack text-3xl text-brown-dark lg:text-6xl">
           Besuche uns
-        </p>
+        </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Öffnungszeiten */}
           <div className="flex flex-col items-center gap-2 bg-amber-50 p-10 rounded-2xl">

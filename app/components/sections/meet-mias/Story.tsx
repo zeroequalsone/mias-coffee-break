@@ -2,7 +2,9 @@ export const Story = () => {
   return (
     <div className="mt-6 bg-brown-dark text-center text-orange-dark">
       <div className="flex flex-col max-w-4xl mx-auto p-8 lg:p-12 gap-6">
-        <p className="font-knicknack text-3xl lg:text-6xl">Unsere Geschichte</p>
+        <h2 className="font-knicknack text-3xl lg:text-6xl">
+          Unsere Geschichte
+        </h2>
         <p className="lg:text-xl">
           Mia's Coffee Break entstand aus der Leidenschaft für authentischen
           Kaffee, köstliche Focaccias, leckere Snacks und erfrischenden Matcha.
