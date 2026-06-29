@@ -13,7 +13,7 @@ export const Visit = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Öffnungszeiten */}
           <div className="flex flex-col items-center gap-2 bg-amber-50 p-10 rounded-2xl">
-            <p className="text-3xl mb-4">Öffnungszeiten</p>
+            <p className="text-2xl lg:text-3xl mb-4">Öffnungszeiten</p>
             <div className="flex flex-col space-y-4 w-full">
               {OPENING_TIMES.map((openingTimes) => (
                 <div
@@ -30,7 +30,7 @@ export const Visit = () => {
 
           {/* Kontakt */}
           <div className="flex flex-col items-center gap-2 bg-amber-50 p-10 rounded-2xl">
-            <p className="text-3xl mb-4">Kontakt</p>
+            <p className="text-2xl lg:text-3xl mb-4">Kontakt</p>
             <div className="flex flex-col space-y-4 w-full">
               {CONTACT_DETAILS.map((contactDetails) => (
                 <div

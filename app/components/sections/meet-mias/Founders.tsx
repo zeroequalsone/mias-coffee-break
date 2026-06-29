@@ -12,14 +12,14 @@ export const Founders = () => {
             teilen. Mit jahrelanger Erfahrung in der Kaffeewelt haben sie sich
             zum Ziel gesetzt, jedem Gast das perfekte Kaffeeerlebnis zu bieten.
           </p>
-          <p className="font-pacifico italic text-sm lg:text-xl lg:max-w-lg mx-auto">
+          <p className="font-pacifico italic lg:text-xl lg:max-w-lg mx-auto">
             "Kaffee verbindet Menschen und schafft Momente der Ruhe in einer
             hektischen Welt."
           </p>
         </div>
         <div className="flex flex-col gap-4 bg-brown-light py-16 lg:py-30 w-full rounded-2xl">
           <p className="text-4xl lg:text-6xl">👥</p>
-          <p className="font-pacifico text-lg lg:text-2xl text-cream">
+          <p className="font-pacifico text-xl lg:text-2xl text-cream">
             Die Gründer
           </p>
         </div>
